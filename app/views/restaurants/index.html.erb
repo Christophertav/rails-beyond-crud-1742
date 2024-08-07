@@ -1,0 +1,8 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Restaurants</h1>
+
+<%= render partial: 'restaurants/list', locals: { restaurants: @restaurants } %>
+
+<%= link_to "New restaurant", new_restaurant_path %>
+<%= link_to 'Top restaurants', top_restaurants_path %>

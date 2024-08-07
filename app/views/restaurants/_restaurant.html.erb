@@ -1,0 +1,22 @@
+<div id="<%= dom_id restaurant %>">
+  <p>
+    <strong>Name:</strong>
+    <%= restaurant.name %>
+  </p>
+
+  <p>
+    <strong>Address:</strong>
+    <%= restaurant.address %>
+  </p>
+
+  <p>
+    <strong>Rating:</strong>
+    <%= restaurant.rating %>
+  </p>
+
+  <p>
+    <strong>Chef:</strong>
+    <%= link_to restaurant.chef_name, chef_restaurant_path(restaurant) %>
+  </p>
+
+</div>
